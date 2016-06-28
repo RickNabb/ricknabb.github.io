@@ -8,53 +8,44 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+    <!--  WIP ALERT  -->
+    <div id="wip-alert">
+      <div data-alert class="alert-box info radius">
+        <p class="center">Welcome to my personal website! As you can see, this is currently a work in progress, so come back later to see the final result. If you would like to get in contact with me, please email <a href="mailto:nrabb@outlook.com">nrabb@outlook.com</a></p>
+        <a href="#" class="close">&times;</a>
+      </div>
+    </div>
+    <!-- EXTRA SPACE FOR SMALL SCREENS -->
+    <div class="offset-xl hide-for-large-up"></div>
+    <div class="offset-xl show-for-small-only"></div>
     <!-- RANDOM QUOTE -->
     <div class="row offset-md">
       <div class="large-12 columns">
-        <h1 class="center">Wow! This text looks awesome.</h1>
-      </div>
-    </div>
-    <!--  WIP ALERT  -->
-    <div class="row">
-      <div class=" columns small-12 offset-xs">
-        <div data-alert class="alert-box info radius">
-          <p class="center">Welcome to my personal website! As you can see, this is currently a work in progress, so come back later to see the final result. If you would like to get in contact with me, please email <a href="mailto:nrabb@outlook.com">nrabb@outlook.com</a></p>
-        </div>
+        <div class="center" id="quote"></div>
       </div>
     </div>
     <!-- SECTION TITLES -->
-    <div class="row offset-md">
-      <div class="small-12 medium-4 columns">
+    <div class="row offset-md" style="margin-bottom: 150px;">
+      <div class="small-6 medium-4 columns">
         <div class="offset-md show-for-small-only"></div>
         <h4 class="center">Game Development</h4>
-      </div>
-      <div class="small-12 medium-4 columns">
-        <div class="offset-md show-for-small-only"></div>
-        <h4 class="center">Mobile Development</h4>
-      </div>
-      <div class="small-12 medium-4 columns">
-        <div class="offset-md show-for-small-only"></div>
-        <h4 class="center">Blog</h4>
-      </div>
-    </div>
-    <!-- PLATFORMS & ICONS -->
-    <div class="row">
-      <div class="small-12 medium-4 columns">
-        <div class="medium-6 center platform-icon anim-hover-up tip-top ease-in-out" data-tooltip aria-haspopup="true" title="Coming Soon!">
+        <div class="small-8 medium-6 center platform-icon anim-hover-up tip-top ease-in-out" data-tooltip aria-haspopup="true" title="Coming Soon!">
           <img src="img/game-controller.svg" />
         </div>
         <div class="small-6 medium-8 platform center"></div>
       </div>
-      
-      <div class="small-12 medium-4 columns">
-        <div class="medium-6 center platform-icon tip-top anim-hover-up ease-in-out" data-tooltip aria-haspopup="true" title="Coming Soon!">
+      <div class="small-6 medium-4 columns">
+        <div class="offset-md show-for-small-only"></div>
+        <h4 class="center">Mobile Development</h4>
+        <div class="small-8 medium-6 center platform-icon tip-top anim-hover-up ease-in-out" data-tooltip aria-haspopup="true" title="Coming Soon!">
           <img src="img/mobile-phone.svg" />
         </div>
         <div class="small-6 medium-8 platform center"></div>
       </div>
-      
-      <div class="small-12 medium-4 columns">
-        <div class="medium-6 center platform-icon tip-top anim-hover-up ease-in-out" data-tooltip aria-haspopup="true" title="Coming Soon!">
+      <div class="small-6 medium-4 columns">
+        <div class="offset-md show-for-small-only"></div>
+        <h4 class="center">Blog</h4>
+        <div class="small-8 medium-6 center platform-icon tip-top anim-hover-up ease-in-out" data-tooltip aria-haspopup="true" title="Coming Soon!">
           <img src="img/ink-and-pen.svg" />
         </div>
         <div class="small-6 medium-8 platform center"></div>
@@ -70,10 +61,10 @@
           <img src="/img/NR.svg" />
         </div>
         <div class="column fix-width-75 right vert-center anim-hover-up ease-in-out">
-          <img src="/img/pixel-twitter-logo.svg" />
+          <a href="http://twitter.com/ricknabb"><img src="/img/pixel-twitter-logo.svg" /></a>
         </div>
         <div class="columns fix-width-75 right vert-center anim-hover-up ease-in-out">
-          <img src="/img/pixel-fb-logo.svg" />
+          <a href="http://facebook.com/nick.rabb"><img src="/img/pixel-fb-logo.svg" /></a>
         </div>
       </div>
     </div>
@@ -81,5 +72,6 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
