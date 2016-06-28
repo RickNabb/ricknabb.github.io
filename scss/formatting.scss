@@ -16,3 +16,9 @@ $lg-offset: 20%;
 .fix-width-75 { width: 75px; }
 .fix-width-100 { width: 100px; }
 .fix-width-150 { width: 150px; }
+
+.vert-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
