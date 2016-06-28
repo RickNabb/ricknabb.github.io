@@ -28,8 +28,38 @@ body {
 .footer {
   position: fixed;
   bottom: 0px;
-  height: 80px;
+  height: 125px;
   overflow-y: hidden;
+  z-index: 10;
+}
+
+.footer-fade-bottom {
+  background-color: $bg-color;
+  opacity: 0.75;
+  height: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-fade-mid {
+  background-color: $bg-color;
+  opacity: 0.5;
+  height: 15px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-fade-top {
+  background-color: $bg-color;
+  opacity: 0.25;
+  height: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-icons {
+  background-color: $bg-color;
+  height: 80px;
   z-index: 10;
 }
 
