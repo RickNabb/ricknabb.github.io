@@ -1,0 +1,18 @@
+$lg-offset: 20%;
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offset-xl { margin-top: 1.25 * $lg-offset; }
+.offset-lg { margin-top: $lg-offset; }
+.offset-md { margin-top: 0.75 * $lg-offset; }
+.offset-sm { margin-top: 0.5 * $lg-offset; }
+.offset-xs { margin-top: 0.25 * $lg-offset; }
+
+.fix-width-50 { width: 50px; }
+.fix-width-75 { width: 75px; }
+.fix-width-100 { width: 100px; }
+.fix-width-150 { width: 150px; }

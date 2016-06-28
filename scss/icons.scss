@@ -1,0 +1,15 @@
+.platform-icon {
+  position: relative;
+  top: 50px;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+.platform-icon:hover {
+  -webkit-transform: translate(0,-2em);
+  -moz-transform: translate(0,-2em);
+  -o-transform: translate(0,-2em);
+  -ms-transform: translate(0,-2em);
+  transform: translate(0,-2em);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}

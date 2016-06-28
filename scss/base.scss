@@ -1,0 +1,43 @@
+/** VARIABLES **/
+
+$bg-color: #D4D5D4;
+$light-accent: #E6E7E8;
+$off-black: #414042;
+$green-accent: #2BB673;
+$green-accent-dark: #218C59;
+
+/** HEADERS AND PARAGRAPHS **/
+
+h1,h2,h3,h4,h5,h6,p,span {
+    font-family: "Delicious";
+    color: $off-black;
+}
+
+a { color: $green-accent; }
+a:visited { color: $green-accent-dark; }
+a:hover { color: $green-accent-dark; }
+
+/** BODY **/
+
+body {
+    background-color: $bg-color;
+}
+
+/** POSITIONS **/
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  height: -80px;
+  overflow-y: hidden;
+}
+
+/** FIGURES **/
+
+.platform {
+  background-color: $light-accent;
+  -webkit-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  -o-transform: skew(-45deg);
+  height: 60px;
+}
