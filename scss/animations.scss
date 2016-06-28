@@ -1,0 +1,11 @@
+.anim-hover-up:hover {
+  -webkit-transform: translate(0,-2em);
+  -moz-transform: translate(0,-2em);
+  -o-transform: translate(0,-2em);
+  -ms-transform: translate(0,-2em);
+  transform: translate(0,-2em);
+}
+
+.ease-in-out {
+  transition: 0.5s ease-in-out;
+}
