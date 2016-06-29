@@ -27,6 +27,14 @@ body {
 
 /** POSITIONS **/
 
+.header {
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  z-index: 12;
+  margin-bottom: 100px;
+}
+
 .footer {
   position: fixed;
   bottom: 0px;
@@ -88,6 +96,13 @@ body {
 #wip-alert {
   position: fixed;
   top: 0;
+  height: 100px;
+  z-index: 10;
+}
+
+#wip-alert-w-header {
+  position: fixed;
+  top: 75px;
   height: 100px;
   z-index: 10;
 }
