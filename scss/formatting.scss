@@ -12,6 +12,12 @@ $lg-offset: 20%;
 .offset-sm { margin-top: 0.5 * $lg-offset; }
 .offset-xs { margin-top: 0.25 * $lg-offset; }
 
+.space-xl { height: 1.25 * $lg-offset; }
+.space-lg { height: $lg-offset; }
+.space-md { height: 0.75 * $lg-offset; }
+.space-sm { height: 0.5 * $lg-offset; }
+.space-xs { height: 0.25 * $lg-offset; }
+
 .fix-width-50 { width: 50px; }
 .fix-width-75 { width: 75px; }
 .fix-width-100 { width: 100px; }
