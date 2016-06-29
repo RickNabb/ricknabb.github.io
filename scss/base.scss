@@ -5,6 +5,8 @@ $light-accent: #E6E7E8;
 $off-black: #414042;
 $green-accent: #2BB673;
 $green-accent-dark: #218C59;
+$blue-accent: #27AAE1;
+$gold-accent: #FBB040;
 
 /** HEADERS AND PARAGRAPHS **/
 
@@ -72,7 +74,14 @@ body {
   -moz-transform: skew(-45deg);
   -o-transform: skew(-45deg);
   height: 60px;
+  transition: background-color 0.5s ease;
 }
+#game-dev:hover+div { background-color: $green-accent; }
+#mobile-dev:hover+div { background-color: $blue-accent; }
+#blog:hover+div { background-color: $gold-accent; }
+
+.inactive { opacity: 0.75; }
+.inactive:hover { cursor: not-allowed !important; }
 
 /** SPECIAL **/
 
