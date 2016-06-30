@@ -13,10 +13,10 @@
       <div class="ease-in-out header-icon fix-width-50">
         <a href="./index.html"><img src="img/pixel-world-no-decor.svg" /></a>
       </div>
-      <div class="ease-in-out anim-border-green header-icon fix-width-50">
+      <div class="ease-in-out header-icon inactive fix-width-50">
         <img src="img/game-controller.svg" />
       </div>
-      <div class="ease-in-out header-icon anim-border-blue fix-width-50">
+      <div class="ease-in-out header-icon inactive fix-width-50">
         <img src="img/mobile-phone.svg" />
       </div>
       <div class="ease-in-out header-icon fix-width-50 active border-gold">
@@ -31,7 +31,79 @@
       </div>
     </div>
     <!-- EXTRA SPACE FOR SMALL SCREENS -->
+    <div class="space-xl"></div>
     <div class="space-sm show-for-small-only"></div>
+    <!-- BLOG TITLE -->
+    <h1 class="center" style="background-color: #9ED4DB; padding:0; margin:0; ">[ Insert Genuine Greeting Here ]</h1>
+    <!-- BLOG PIC  -->
+    <div class="width-100-percent">
+      <div class="show-for-small-up hide-for-large-up">
+        <img src="img/blog-pic-may-16.svg" />
+      </div>
+      <div class="show-for-large-up">
+        <img src="img/blog-pic-may-16-extend.svg" />
+      </div>
+    </div>
+    <!--  CALENDAR PICKER  -->
+<!--
+    <div class="row">
+      <div class="columns center">
+        <a href="#" data-reveal-id="calendarModal" class="button bg-green"><h1>Choose a date</h1></a>
+      </div>
+    </div>
+-->
+    <div id="calendarModal" class="reveal-modal" data-reveal aria-labelledby="calendarModalTitle" aria-hidden="true" role="dialog">
+      <h2 id="calendarModalTitle">Choose a Date</h2>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      <div class="row columns small-10 small-offset-1">
+        <div class="columns small-1"><h1>&lsaquo;</h1></div>
+        <div class="columns small-2 small-offset-4"><h1>2016</h1></div>
+        <div class="columns small-1 right"><h1>&rsaquo;</h1></div>
+        <hr />
+      </div>
+      <div class="row columns small-10 small-offset-1">
+        <div class="columns small-3">
+          <div class="center"><h1>JAN</h1></div>
+        </div>
+        <div class="columns small-3">
+          <div class="center"><h1>FEB</h1></div>
+        </div>
+        <div class="columns small-3">
+          <div class="center"><h1>MAR</h1></div>
+        </div>
+        <div class="columns small-3">
+          <div class="center"><h1>APR</h1></div>
+        </div>
+      </div>
+      <div class="row columns small-10 small-offset-1">
+        <div class="columns small-3">
+          <div class="center"><h1>MAY</h1></div>
+        </div>
+        <div class="columns small-3">
+          <div class="center"><h1>JUN</h1></div>
+        </div>
+        <div class="columns small-3">
+          <div class="center"><h1>JUL</h1></div>
+        </div>
+        <div class="columns small-3">
+          <div class="center"><h1>AUG</h1></div>
+        </div>
+      </div>
+      <div class="row columns small-10 small-offset-1">
+        <div class="columns small-3">
+          <div class="center"><h1>SEP</h1></div>
+        </div>
+        <div class="columns small-3">
+          <div class="center"><h1>OCT</h1></div>
+        </div>
+        <div class="columns small-3">
+          <div class="center"><h1>NOV</h1></div>
+        </div>
+        <div class="columns small-3">
+          <div class="center"><h1>DEC</h1></div>
+        </div>
+      </div>
+    </div>
     <!-- FOOTER -->
     <div class="footer">
       <div class="footer-fade-top"></div>
@@ -53,8 +125,8 @@
       </div>
     </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/foundation/js/foundation.js"></script>
     <script src="js/app.js"></script>
     <script src="js/home.js"></script>
   </body>
