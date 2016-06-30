@@ -12,7 +12,15 @@
   -ms-transform: translate(0,2em);
   transform: translate(0,2em);
 }
-
+.anim-border-blue:hover {
+  border: 2px solid $blue-accent;
+}
+.anim-border-green:hover {
+  border: 2px solid $green-accent;
+}
+.anim-border-gold:hover {
+  border: 2px solid $gold-accent;
+}
 .ease-in-out {
   transition: 0.5s ease-in-out;
 }

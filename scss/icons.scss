@@ -1,15 +1,17 @@
 .platform-icon {
   position: relative;
   top: 50px;
-  z-index: 1;
+  z-index: 10;
 }
 .platform-icon:hover {
   cursor: pointer;
 }
 .header-icon {
+  margin-top: 1%;
   display: inline-block;
   margin-right: 2%;
   opacity: 0.75;
+  padding: 5px;
 }
 .header-icon.active { opacity: 1.0; }
 .header-icon.active:hover { cursor: default; }

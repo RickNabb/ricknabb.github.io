@@ -1,12 +1,29 @@
 /** VARIABLES **/
 
-$bg-color: #D4D5D4;
-$light-accent: #E6E7E8;
+$bg-color: #E6E7E8;
+$light-accent: #FFF;
 $off-black: #414042;
 $green-accent: #2BB673;
 $green-accent-dark: #218C59;
 $blue-accent: #27AAE1;
 $gold-accent: #FBB040;
+
+/** COLORS **/
+.fg-bg-color { color: $bg-color; }
+.bg-bg-color { background-color: $bg-color; }
+.fg-light { color: $light-accent; }
+.bg-light { background-color: $light-accent; }
+.fg-green { color: $green-accent; }
+.bg-green { background-color: $green-accent; }
+.fg-dark-green { color: $green-accent-dark; }
+.bg-dark-green { background-color: $green-accent-dark; }
+.fg-blue { color: $blue-accent; }
+.bg-blue { background-color: $blue-accent; }
+.fg-gold { color: $gold-accent; }
+.bg-gold { background-color: $gold-accent; }
+.border-green { border: 2px solid $green-accent; }
+.border-blue { border: 2px solid $blue-accent; }
+.border-gold { border: 2px solid $gold-accent; }
 
 /** HEADERS AND PARAGRAPHS **/
 
@@ -33,6 +50,9 @@ body {
   height: 60px;
   z-index: 12;
   margin-bottom: 100px;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .footer {
@@ -78,7 +98,6 @@ body {
 /** FIGURES **/
 
 .platform {
-  background-color: $light-accent;
   -webkit-transform: skew(-45deg);
   -moz-transform: skew(-45deg);
   -o-transform: skew(-45deg);
