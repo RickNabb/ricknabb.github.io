@@ -24,24 +24,26 @@
       </div>
     </div>
     <!--  WIP ALERT  -->
+<!--
     <div id="wip-alert-w-header">
       <div data-alert class="alert-box info radius">
         <p class="center">Welcome to my personal website! As you can see, this is currently a work in progress, so come back later to see the final result. If you would like to get in contact with me, please email <a href="mailto:nrabb@outlook.com">nrabb@outlook.com</a></p>
         <a href="#" class="close">&times;</a>
       </div>
     </div>
+-->
     <!-- EXTRA SPACE FOR SMALL SCREENS -->
-    <div class="space-xl"></div>
+    <div class="space-lg"></div>
     <div class="space-sm show-for-small-only"></div>
     <!-- BLOG TITLE -->
     <h1 class="center" style="background-color: #9ED4DB; padding:0; margin:0; ">[ Insert Genuine Greeting Here ]</h1>
     <!-- BLOG PIC  -->
     <div class="width-100-percent">
       <div class="show-for-small-up hide-for-large-up">
-        <img src="img/blog-pic-may-16.svg" />
+        <img src="img/blog/06-16/blog-pic-may-16.svg" />
       </div>
       <div class="show-for-large-up">
-        <img src="img/blog-pic-may-16-extend.svg" />
+        <img src="img/blog/06-16/blog-pic-may-16-extend.svg" />
       </div>
     </div>
     <!--  CALENDAR PICKER  -->
@@ -104,6 +106,59 @@
         </div>
       </div>
     </div>
+    <!--  BLOG CONTENT  -->
+    <!--  MAIN QUOTE  -->
+    <div class="row offset-xs">
+      <div class="columns small-10 small-offset-1 center"><h2>"I want to share my thoughts with the world at large and see who bites..."</h2><!--Make this italics--></div>
+    </div>
+    <!-- DATE -->
+    <div class="row offset-sm">
+      <div class="columns right small-4">
+        <p class="italics">6/30/2016 by Nick Rabb</p>
+      </div>
+    </div>
+    <!-- ACTUAL CONTENT -->
+    <div class="row">
+      <div class="columns small-10 small-offset-1">
+        <p>Well, I finally did it.</p>
+        <p>[ End of Blog ]</p>
+        <p>No, but seriously, this has been a long time coming. I’ve been meaning to sit down and hammer out a personal website of my own for about three years now, and I just found the motivation to do it. I hope you enjoy the layout and design, but if you don’t, get in contact with me and let me know what you’d change.</p>
+        <p>The long and short of this is that I want to keep some documentation of my thoughts, ideas, and accomplishments for myself or whoever wants to view them. I have a lot of ideas for applications, games, and technology in general, but beyond that, I think deeply about a lot of things and don’t want to become a <a href="http://tumblr.com">Tumblr</a> girl. (If that joke was offensive to anybody, I really don’t know the first thing about Tumblr, so excuse my ignorance.) I want to share my thoughts with the world at large and see who bites – so, by all means, bite away!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-4 small-offset-1">
+        <p>This being my first blog post, I want to give some of my background to you, and also talk a bit about where I want to go both with this site and in life. As you know, my name is Nick Rabb, and I am a Computer Science major (very soon to be grad) of the <a href="http://rit.edu">Rochester Institute of Technology</a>. I’ve studied a variety of subjects at RIT, from Web Development, Network Design, Database Design, to Assembly Programming. My professional projects have included e-commerce websites, big data consumption, medical website design, and network development for a large-scale mobile game. I’ll write individual posts about all of my relevant projects at a later date.</p>
+      </div>
+      <div class="columns left small-5 small-offset-1">
+        <img src="img/blog/06-16/yag-graduation.jpg" />
+        <p class="offset-xs center">Me (on the left) graduating with Wes and Jackie, my partners at Yes And Games</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-10 small-offset-1">
+        <p>My latest project, being the aforementioned mobile game, has been my most successful so far. It started with a friend of mine, Wes Rockholz, and the two of us creating a company called <a href="http://yesandgames.com">Yes And Games</a>. Currently, the company has five employees, and we just launched our first game, on iOS and Android, called <a href="http://adventureguildgame.com">Adventure Guild</a> (go download it now!) It’s been just over one and a half years since Adventure Guild was started, and my time in the venture is nearing a year. However, now I want to set my sights on continuing development on old projects, and starting new ones – this website being the first of the latter.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-10 small-offset-1">
+        <img src="img/blog/06-16/Bojack_Horseguild.PNG" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns small-10 small-offset-1">
+        <p class="center">A screenshot from Adventure Guild featuring some of my old Adventurers and their Guild. Add RickNabb if you want to play!</p>
+      </div>
+    </div>
+    <div class="row offset-xs">
+      <div class="columns small-10 small-offset-1">
+        <p>Now, for the tech talk… Let’s start with this website. So far, this site has been written in basic HTML, <a href="http://sass-lang.com/">Sass</a> CSS, and Javascript. The CSS backbone is the <a href="http://foundation.zurb.com">Foundation</a> framework, using a <a href="https://www.npmjs.com/">NPM</a> and <a href="http://gruntjs.com/">Grunt</a> stack for builds. I wanted the site to be really well-designed, and responsive, so I mocked it up in <a href="http://www.adobe.com/products/illustrator.html">Adobe Illustrator</a> and designed mobile-first with SVG graphics for responsiveness. Right now, each page is static HTML and CSS, but in the next iteration, recurring sections will be templated and fit into a more formulaic approach. Down the line, I am going to integrate the site with some features using a <a href="http://expressjs.com/">NodeJS Express</a> REST API just for kicks, and open the API publically. The API should serve to alleviate some of the burden of site maintenance because it will have hooks with an Admin interface to write blog posts and any other highly template-oriented content. All of the data that the site will use will eventually also be stored in a <a href="https://www.mysql.com/">MySQL</a> database, and retrieved with the same Node backend.</p>
+        <p>If you read through the nerd-speak, congrats and thanks! If not, don’t sweat it, there will be more interesting content to come. So with all of this said, I’ll cut it off here and leave the rest for a later date. Keep an eye on the site for more posts, but also if you follow me on <a href="http://facebook.com/nick.rabb">Facebook</a> or <a href="http://twitter.com/ricknabb">Twitter</a>, I’ll make some buzz about my progress.</p>
+        <br />
+        <p>Thanks for reading, folks!</p>
+      </div>
+    </div>    
+    <div class="space-md"></div>
     <!-- FOOTER -->
     <div class="footer">
       <div class="footer-fade-top"></div>
