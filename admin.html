@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick Rabb | Blog</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <!--  HEADER  -->
+    <div class="header">
+      <div class="ease-in-out header-icon fix-width-50">
+        <a href="./index.html"><img src="img/pixel-world-no-decor.svg" /></a>
+      </div>
+      <div class="ease-in-out header-icon inactive fix-width-50">
+        <img src="img/game-controller.svg" />
+      </div>
+      <div class="ease-in-out header-icon inactive fix-width-50">
+        <img src="img/mobile-phone.svg" />
+      </div>
+      <div class="ease-in-out header-icon fix-width-50">
+        <img src="img/ink-and-pen.svg" />
+      </div>
+    </div>
+    <!-- EXTRA SPACE FOR SMALL SCREENS -->
+    <div class="space-lg"></div>
+    <div class="space-sm show-for-small-only"></div>
+    <!--  SIDE TOOLBAR  -->
+    <div id="side-toolbar" class="side-toolbar ease-in-out">
+      <a href="#"><img id="side-toolbar-blog" class="header-icon ease-in-out" src="img/ink-and-pen.svg" /></a>
+    </div>
+    <!-- ADMIN PANEL TITLE -->
+    <h1 class="center">Administration Panel</h1>
+    <div id="state-none">
+      <div class="row offset-sm">
+        <div class="columns small-3 small-offset-1">
+          <a href="#" onclick="changeState(STATE_BLOG_TOOLS);"><img class="header-icon ease-in-out" src="img/ink-and-pen.svg" />
+          <h4 class="center">Blog Tools</h4></a>
+        </div>
+      </div>
+    </div>
+    <!--  BLOG TOOLS  -->
+    <div id="state-blog-tools" style="display: none;">
+      <div class="row">
+        <div class="columns">
+          <h3 class="center">Blog Tools</h3>
+        </div>
+      </div>
+      <div class="row offset-xs">
+        <div class="columns small-3 small-offset-1">
+          <div class="center">
+            <a href="#" class="button success"><i class="fi-plus"></i>New Post</a>
+          </div>
+        </div>
+        <div class="columns small-3 small-offset-1 left">
+          <div class="center">
+            <a href="#" class="button"><i class="fi-magnifying-glass"></i>View Posts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space-md"></div>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-fade-top"></div>
+      <div class="footer-fade-mid"></div>
+      <div class="footer-fade-bottom"></div>
+      <div class="footer-icons">
+        <div class="fix-width-100 columns vert-center">
+          <img src="/img/NR.svg" />
+        </div>
+        <div class="column fix-width-75 right vert-center anim-hover-up ease-in-out">
+          <a href="http://twitter.com/ricknabb"><img src="/img/pixel-twitter-logo.svg" /></a>
+        </div>
+        <div class="columns fix-width-75 right vert-center anim-hover-up ease-in-out">
+          <a href="http://facebook.com/nick.rabb"><img src="/img/pixel-fb-logo.svg" /></a>
+        </div>
+        <div class="columns fix-width-75 right vert-center anim-hover-up ease-in-out">
+          <a href="http://yesandgames.com"><img src="/img/pixel-yag-logo.svg" /></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/foundation/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

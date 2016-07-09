@@ -34,7 +34,10 @@ h1,h2,h3,h4,h5,h6,p,span {
 
 a { color: $green-accent; }
 a:visited { color: $green-accent-dark; }
+a.button:visited { color: #fff; }
 a:hover { color: $green-accent-dark; }
+
+i { padding-right: 10px; }
 
 /** BODY **/
 
@@ -94,6 +97,20 @@ body {
   background-color: $bg-color;
   height: 80px;
   z-index: 10;
+}
+
+.side-toolbar {
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  z-index: 20;
+  border-radius: 5px;
+  background-color: $light-accent;
+  left: -55px;
+  padding: 1% 5px 5% 5px;
+}
+.side-toolbar.active {
+  left: -5px;
 }
 
 /** FIGURES **/
