@@ -8,7 +8,7 @@
    },
    {
       "id":"serverDev",
-      "databaseName":"yes_and_games_dev",
+      "databaseName":"ricknabb_io",
       "host":"localhost",
       "user":"adventure",
       "password":"YTE2ZTJkYTc4MWZkMm"

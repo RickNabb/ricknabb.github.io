@@ -13,17 +13,18 @@
 // ======================================
 
 var db = require('./mysql-connect.js');
+var 
 var express = require('express');
 var bodyParser = require('body-parser');
 
 var app = express();
 var version = "0.1";
-var dbInstance = 'serverDev';
+var dbInstance = 'localDev';
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(function (req, res, next) {
-    var allowedOrigins = ['http://ricknabb.github.io'];
+    var allowedOrigins = dbInstance === 'serverDev' ? ['http://ricknabb.github.io'] : ['localhost'];
     var origin = req.headers.origin;
 
     // Set allowed access origins
@@ -59,20 +60,17 @@ router.get('/version', function (req, res, next) {
     res.json({ message: "Version " + version });
 });
 
-// Routes for /v1/auth/
-router.route('/auth/confirm')
-//    .post(function (req, res, next) {
-//        // Confirm a user's account
-//        var uuid = req.body.confirmUUID;
-//
-//        if (uuid !== undefined) {
-//            auth.confirmUser(db, uuid, res);
-//        } else {
-//            console.error("No UUID provided for POST /auth/confirmAccount");
-//            res.status(400);
-//            res.json({message: 'You must provide a uuid with the request!'});
-//        }
-//    });
+// Routes for /v1/blog/
+router.route('/blog/post')
+  .post(function (req, res, next) {
+    var title = req.body.title,
+        bodyURL = req.body.bodyURL,
+        author = req.body.author,
+        tags = req.body.tags;
+    if (title === undefined || bodyURL === undefined || author === undefined || tags === undefined) {
+      res.json({success: false, message: "You were missing one or more body parameters."});
+    }
+  });
 
 app.use('/v1', router);
 
