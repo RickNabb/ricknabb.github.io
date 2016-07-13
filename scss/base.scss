@@ -11,6 +11,8 @@ $gold-accent: #FBB040;
 /** COLORS **/
 .fg-bg-color { color: $bg-color; }
 .bg-bg-color { background-color: $bg-color; }
+.fg-off-black { color: $off-black; }
+.bg-off-black { background-color: $off-black; }
 .fg-light { color: $light-accent; }
 .bg-light { background-color: $light-accent; }
 .fg-green { color: $green-accent; }
@@ -38,6 +40,7 @@ a.button:visited { color: #fff; }
 a:hover { color: $green-accent-dark; }
 
 i { padding-right: 10px; }
+i.right { padding-left: 10px; }
 
 /** BODY **/
 
@@ -101,9 +104,9 @@ body {
 
 .side-toolbar {
   width: 50px;
-  position: absolute;
+  position: fixed;
   top: 10%;
-  z-index: 20;
+  z-index: 11;
   border-radius: 5px;
   background-color: $light-accent;
   left: -55px;

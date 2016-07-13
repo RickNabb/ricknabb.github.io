@@ -36,9 +36,11 @@ function changeState(state) {
   switch (state) {
     case (STATE_NONE):
       $("#state-none").fadeIn();
+      $("#side-toolbar-back").fadeOut();
       break;
     case (STATE_BLOG_TOOLS):
       $("#state-blog-tools").fadeIn();
+      $("#side-toolbar-back").fadeIn();
       $("#side-toolbar-blog").addClass("active");
       break;
   }

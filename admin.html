@@ -29,6 +29,7 @@
     <div class="space-sm show-for-small-only"></div>
     <!--  SIDE TOOLBAR  -->
     <div id="side-toolbar" class="side-toolbar ease-in-out">
+      <a href="#" onclick="changeState(STATE_NONE);"><h4 class="center"><i id="side-toolbar-back" class="header-icon ease-in-out fi-arrow-left fg-off-black"></i></h4></a>
       <a href="#"><img id="side-toolbar-blog" class="header-icon ease-in-out" src="img/ink-and-pen.svg" /></a>
     </div>
     <!-- ADMIN PANEL TITLE -->
@@ -43,6 +44,7 @@
     </div>
     <!--  BLOG TOOLS  -->
     <div id="state-blog-tools" style="display: none;">
+      <!--   ACTION BUTTONS   -->
       <div class="row">
         <div class="columns">
           <h3 class="center">Blog Tools</h3>
@@ -58,6 +60,54 @@
           <div class="center">
             <a href="#" class="button"><i class="fi-magnifying-glass"></i>View Posts</a>
           </div>
+        </div>
+      </div>
+      <!--   NEW POST FORM   -->
+      <div id="new-post-form">
+        <hr />
+        <!--   TITLE     -->
+        <div class="row">
+          <div class="columns small-10 small-offset-1">
+            <label for="blog-post-title">Post Title</label>
+            <input type="text" id="blog-post-title" placeholder="Gimme a Title for God's Sake!"/>
+          </div>
+        </div>
+        <!--     BODY FILE UPLOAD       -->
+        <div class="row">
+          <div class="columns small-10 small-offset-1">
+            <label for="blog-post-body-upload">Body HTML File</label>
+            <input type="file" id="blog-post-body-upload" />
+          </div>
+        </div>
+        <!--     AUTHOR       -->
+        <div class="row">
+          <div class="columns small-10 small-offset-1">
+            <label for="blog-post-author">Author</label>
+            <input type="text" id="blog-post-author" placeholder="Someone had to have written this..." />
+          </div>
+        </div>
+        <!--     TAGS       -->
+        <div class="row">
+          <div class="columns small-10 small-offset-1">
+            <label for="blog-post-tag-selector">Tags</label>
+            <div class="callout primary" id="blog-post-tags">
+              <div class="label" id="blog-post-tag-holder"><i class="fi-x"></i>Example Tag</div>
+            </div>
+          </div>
+        </div>
+        <!--   TAG SELECTOR     -->
+        <div class="row">
+          <div class="columns small-10 small-offset-1">
+            <select class="small-3 offset-xs">
+              <option>Select some tags...</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!--   PREVIEW BUTTON   -->
+      <div class="row">
+        <div class="columns small-10 small-offset-1">
+          <a href="#" class="button success right">Preview<i class="fi-arrow-right right"></i></a>
         </div>
       </div>
     </div>
