@@ -1,0 +1,16 @@
+[
+   {
+      "id":"localDev",
+      "databaseName":"ricknabb_io",
+      "host":"localhost",
+      "user":"root",
+      "password":""
+   },
+   {
+      "id":"serverDev",
+      "databaseName":"yes_and_games_dev",
+      "host":"localhost",
+      "user":"adventure",
+      "password":"YTE2ZTJkYTc4MWZkMm"
+   }
+]

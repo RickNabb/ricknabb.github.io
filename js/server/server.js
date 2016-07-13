@@ -12,7 +12,7 @@
 // VARIABLES
 // ======================================
 
-var db = require('./src/mysql-connect.js');
+var db = require('./mysql-connect.js');
 var express = require('express');
 var bodyParser = require('body-parser');
 
